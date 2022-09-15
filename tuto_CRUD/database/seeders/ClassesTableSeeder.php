@@ -18,7 +18,7 @@ class ClassesTableSeeder extends Seeder
     {
         
         
-        DB::table("classe")->insert([
+        DB::table("classes")->insert([
             ["libelle"=>"6eme"],
             ["libelle"=>"5eme"],
             ["libelle"=>"4eme"],

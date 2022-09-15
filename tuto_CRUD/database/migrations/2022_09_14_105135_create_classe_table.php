@@ -13,7 +13,7 @@ class CreateClasseTable extends Migration
      */
     public function up()
     {
-        Schema::create('classe', function (Blueprint $table) {
+        Schema::create('classes', function (Blueprint $table) {
             $table->id();
             $table->string('libelle');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateClasseTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('classe');
+        Schema::dropIfExists('classes');
     }
 }

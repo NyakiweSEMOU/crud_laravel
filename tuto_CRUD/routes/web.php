@@ -20,3 +20,10 @@ Route::get('/', function () {
 
 
 Route::get('/etudiant', [etudiantController::class,"index"])->name("etudiant");
+Route::get('/etudiant/create', [etudiantController::class,"create"])->name("etudiant.create");
+
+Route::get('/etudiant/{etudiant}', [etudiantController::class,"edit"])->name("etudiant.edit");
+
+Route::post('/etudiant/create', [etudiantController::class,"insertion"])->name("etudiant.ajouter");
+Route::delete('/etudiant/{etudiant}', [etudiantController::class,"delete"])->name("etudiant.supprimer");
+Route::put('/etudiant/{etudiant}', [etudiantController::class,"update"])->name("etudiant.update");
